@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: result-deployment
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       component: result
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: result
-          image: docker/example-voting-app-result
+          image: busfahrer/simple-result:v6
           ports:
             - containerPort: 80

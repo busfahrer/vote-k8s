@@ -15,9 +15,9 @@ spec:
     spec:
 
       volumes:
-        - name: postgres-storage
+        - name: postgres-storage-3
           persistentVolumeClaim:
-            claimName: database-persistent-volume-claim
+            claimName: database-persistent-volume-claim-3
 
       containers:
         - name: postgres
@@ -25,6 +25,6 @@ spec:
           ports:
             - containerPort: 5432
           volumeMounts:
-            - name: postgres-storage
+            - name: postgres-storage-3
               mountPath: /var/lib/postgresql/data
               subPath: postgres

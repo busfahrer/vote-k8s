@@ -13,7 +13,7 @@ spec:
             backend:
               serviceName: vote
               servicePort: 5000
-          - path: /result/
+          - path: /result
             backend:
               serviceName: result
               servicePort: 5001
