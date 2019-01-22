@@ -11,9 +11,9 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: vote-cluster-ip-service
+              serviceName: vote
               servicePort: 5000
-          - path: /
+          - path: /result/
             backend:
-              serviceName: result-cluster-ip-service
+              serviceName: result
               servicePort: 5001
